@@ -12,6 +12,13 @@ export class EntityManager {
     return id;
   }
 
+  removeEntity(id) {
+    this.entities.delete(id);
+    for (const [componentType, entityMap] of this.components.entries()) {
+      entityMap.delete(id);
+    }
+  }
+
   addComponent(entityId, component) {
     const map = this.components.get(entityId);
     map.set(component.constructor.name, component);

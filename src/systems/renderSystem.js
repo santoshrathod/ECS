@@ -15,14 +15,18 @@ export class RenderSystem {
       if (!spriteComp.sprite) {
         const sprite = PIXI.Sprite.from(spriteComp.texture);
         sprite.anchor.set(spriteComp.anchorX, spriteComp.anchorY);
-        this.app.stage.addChild(sprite);
+
         spriteComp.sprite = sprite;
         this.sprites.set(id, sprite);
       }
 
       const sprite = spriteComp.sprite;
+      this.app.stage.addChild(sprite);
       sprite.x = pos.x;
       sprite.y = pos.y;
+      sprite.height = 32;
+      sprite.width = 32;
+      sprite.tint = 0x03da00
     }
   }
 }

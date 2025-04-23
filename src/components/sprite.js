@@ -1,8 +1,9 @@
+
 export class Sprite {
-  constructor(texture, anchorX = 0.5, anchorY = 0.5) {
+  constructor(texture, anchorX = 0, anchorY = 0) {
     this.texture = texture;
     this.anchorX = anchorX;
     this.anchorY = anchorY;
-    this.sprite = null; // PIXI.Sprite instance created later
+    this.sprite = null;
   }
 }
