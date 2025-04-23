@@ -1,7 +1,7 @@
 // AISystem.js
-import { Position } from '../components/Position.js';
-import { Velocity } from '../components/Velocity.js';
-import { Health } from '../components/Health.js';
+import { Position } from '../components/position.js';
+import { Velocity } from '../components/velocity.js';
+import { Health } from '../components/health.js';
 export class AISystem {
   constructor(stageWidth, stageHeight) {
     this.stageWidth = stageWidth;
