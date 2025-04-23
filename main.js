@@ -9,7 +9,7 @@ async function init() {
     await app.init({
         width: window.innerWidth,
         height: window.innerHeight,
-        backgroundColor: 0xcccccc,
+        backgroundColor: 0x000000,
         antialias: true,
     })
 
